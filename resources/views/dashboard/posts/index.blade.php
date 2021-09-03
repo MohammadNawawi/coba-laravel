@@ -7,6 +7,7 @@
         </div>
 
         <div class="table-responsive">
+            <a href="/dashboard/posts/create" class="btn btn-primary mb-3">Create New Post</a>
             <table class="table table-striped table-sm">
                 <thead>
                     <tr>
@@ -21,7 +22,7 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $post->title }}</td>
-                            <td>{{ $post->category->nmae }}</td>
+                            <td>{{ $post->category->name }}</td>
                             <td>
                                 <a href="/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span
                                         data-feather="eye"></span></a>
